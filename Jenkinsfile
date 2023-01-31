@@ -1,10 +1,9 @@
 pipeline{
     
-    agent any 
+    agent { label 'linux' } 
     tools {
-        maven '3.8.1'
+        maven '3.8.7'
     }
-    
     stages {
         
         stage('Git Checkout'){

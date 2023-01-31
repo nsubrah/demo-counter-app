@@ -1,9 +1,6 @@
 pipeline{
     
-    agent { label 'linux' } 
-    tools {
-        mvn '3.8.7'
-    }
+    agent any 
     stages {
         
         stage('Git Checkout'){

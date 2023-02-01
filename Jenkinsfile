@@ -13,6 +13,16 @@ pipeline{
                 }
             }
         }
+        stage('UNIT testing'){
+            
+            steps{
+                
+                script{
+                    
+                    sh 'mvn test'
+                }
+            }
+        }        
         stage('Static code analysis'){
             
             steps{
